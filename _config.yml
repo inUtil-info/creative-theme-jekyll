@@ -1,5 +1,5 @@
 # Site settings
-title: 'inUtil, AI powered Energy Efficiency'
+title: 'inUtil, AI powered efficiency'
 email: info@inutil.info
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
