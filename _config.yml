@@ -8,6 +8,8 @@ url: "https://inutil.info" # the base hostname & protocol for your site
 twitter_username: BotGasolin
 github_username: inUtil-info
 linkedin_username: botgasolin
+facebook_username: Gasolin Bot
+instagram_username: gasolinbot
 
 # Build settings
 markdown: kramdown
