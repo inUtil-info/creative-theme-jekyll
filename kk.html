@@ -4,15 +4,8 @@
    <head>
       
       <script type = "text/javascript">
-
-            function getValue() 
-            {
-               var retVal = prompt("Message : ", "your message here");
-               send(retVal);
-               document.write("Message sent");
-            }
-            
-            function send (m)
+	      
+	    function msend (m)
             {
             const options = 
                 {
@@ -31,6 +24,15 @@
 	            .catch(err => console.error(err));
   
             }
+
+            function getValue() 
+            {
+               var retVal = prompt("Message : ", "your message here");
+               msend(retVal);
+               document.write("Message sent");
+            }
+            
+            
       </script>
       
    </head>
