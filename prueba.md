@@ -1,5 +1,4 @@
 
 # Allá vamos:
 
-%{ include wspme.html }%
-
+{% include wspme.html %}
