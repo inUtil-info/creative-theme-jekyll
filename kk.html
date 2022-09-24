@@ -20,7 +20,7 @@
 		xhr.send(data); 		      
 	      }
 	      
-            function getValue() 
+            function sendWhatsapp() 
             {
                var retVal = prompt("Message : ", "your message here");
                wsend(retVal);
@@ -35,7 +35,7 @@
    <body>
       
       <form>
-         <input type = "button" value = "Whatsapp Albert" onclick = "getValue();" />
+         <input type = "button" value = "Whatsapp Albert" onclick = "sendWhatsapp();" />
       </form>
       
    </body>
