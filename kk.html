@@ -5,6 +5,22 @@
       
       <script type = "text/javascript">
 	      
+	 function wsend(m)
+	      {
+	      const data = JSON.stringify({"text": m});
+	      const xhr = new XMLHttpRequest();
+	      xhr.withCredentials = true;
+	      xhr.addEventListener("readystatechange", function () {
+	      if (this.readyState === this.DONE) {console.log(this.responseText);}
+		});
+		xhr.open("POST", "https://whin2.p.rapidapi.com/send");
+		xhr.setRequestHeader("content-type", "application/json");
+		xhr.setRequestHeader("X-RapidAPI-Key", "4ac6483d72msh8cb9d27aa42db9bp17e279jsn953265938421");
+		xhr.setRequestHeader("X-RapidAPI-Host", "whin2.p.rapidapi.com");
+		xhr.send(data); 		      
+	      }
+	      	      
+	      
 	    function msend (m)
             {
             const options = 
@@ -30,7 +46,7 @@
             function getValue() 
             {
                var retVal = prompt("Message : ", "your message here");
-               msend(retVal);
+               wsend(retVal);
                document.write("Message sent");
             }
             
