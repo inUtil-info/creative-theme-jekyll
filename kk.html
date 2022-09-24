@@ -18,6 +18,8 @@
 	                },
 	              body: '{"text":m}'
               };
+		    
+	    document.write("Dentro de send, ahora hacermos la peticion");
             fetch('https://whin2.p.rapidapi.com/send', options)
 	            .then(response => response.json())
 	            .then(response => console.log(response))
