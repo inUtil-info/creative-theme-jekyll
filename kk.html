@@ -19,30 +19,7 @@
 		xhr.setRequestHeader("X-RapidAPI-Host", "whin2.p.rapidapi.com");
 		xhr.send(data); 		      
 	      }
-	      	      
 	      
-	    function msend (m)
-            {
-            const options = 
-                {
-	              method: 'POST',
-	              headers: 
-                  {
-		              'content-type': 'application/json',
-		              'X-RapidAPI-Key': '4ac6483d72msh8cb9d27aa42db9bp17e279jsn953265938421',
-		              'X-RapidAPI-Host': 'whin2.p.rapidapi.com'
-	                },
-	              body: '{"text":m}'
-              };
-		    
-	    document.write("Dentro de send, ahora hacermos la peticion");
-            fetch('https://whin2.p.rapidapi.com/send', options)
-	            .then(response => response.json())
-	            .then(response => console.log(response))
-	            .catch(err => console.error(err));
-  
-            }
-
             function getValue() 
             {
                var retVal = prompt("Message : ", "your message here");
